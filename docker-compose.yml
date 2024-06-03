@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+ 
+  node_db1:
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=database_name
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+    restart: always
+    ports:
+      - "3306:3306"
